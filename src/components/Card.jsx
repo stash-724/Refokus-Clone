@@ -1,7 +1,7 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
 function Card({width, start, para, hover}) {
   return (
-    <div className={`bg-zinc-800 min-h-[60vh] hover:${hover} justify-between flex flex-col p-5 rounded-xl ${width}`}>
+    <div className={`bg-zinc-800 min-h-[60vh] ${hover && "hover:bg-violet-600"} justify-between flex flex-col p-5 rounded-xl ${width}`}>
         <div className="w-full" >
             <div className="w-full flex justify-between items-center">
                 <h3>first heding</h3>
