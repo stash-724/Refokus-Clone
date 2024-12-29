@@ -54,7 +54,7 @@ function Work() {
       );
     }
     switch (
-      Math.floor(data * 100) //the *100 is to make it percent
+      Math.floor(data * 100) 
     ) {
       case 0:
         imagesShow([]);
@@ -83,19 +83,13 @@ function Work() {
   return (
     <div className="w-full mt-10">
       <div className="relative max-w-screen-xl mx-auto text-center ">
-        <h1 className="text-[40vw] leading-none font-medium select-none">
-          work
-        </h1>
+        <h1 className="text-[35vw] leading-none font-medium tracking-tight"> work </h1>
         <div className="absolute top-0 w-full h-full">
-          {images.map(
-            (elem, index) =>
+          {images.map((elem, index) =>
               elem.isActive && (
                 <img
-                  key={index}
-                  className="absolute w-60 rounded-lg -translate-x-[50%] -translate-y-[50%]"
-                  style={{ top: elem.top, left: elem.left }}
-                  src={elem.url}
-                  alt="work_images"
+                  key={index} className="absolute w-60 rounded-lg -translate-x-[50%] -translate-y-[50%]"
+                  style={{ top: elem.top, left: elem.left }} src={elem.url} alt="work_images"
                 />
               )
           )}

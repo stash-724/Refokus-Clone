@@ -33,7 +33,7 @@ function Marquees() {
         <Marquee key={index} direction={index===0 ? "left" : "right"} imagesurls={item} />
       ))}
     </div>
-  ); 
+  );
 }
 
 export default Marquees;
